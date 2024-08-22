@@ -1,15 +1,14 @@
-import { backendApi } from "@/lib/utils";
-import axios from "axios";
+import { getData } from "./actions";
 import HomeComponent from "./components/home/Home";
 
-async function getData() {
-  const catRes = await axios.get(`${backendApi}/category/get-category`);
-  const animalRes = await axios.get(`${backendApi}/animal/get-animals`);
-  return {
-    categories: catRes.data.data,
-    animals: animalRes.data.data,
-  };
-}
+// async function getData() {
+//   const catRes = await axios.get(`${backendApi}/category/get-category`);
+//   const animalRes = await axios.get(`${backendApi}/animal/get-animals`);
+//   return {
+//     categories: catRes.data.data,
+//     animals: animalRes.data.data,
+//   };
+// }
 
 export default async function Home() {
   const data = await getData();
