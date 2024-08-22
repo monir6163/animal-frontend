@@ -37,7 +37,7 @@ export default function HomeComponent({ categories, animals }: any) {
         </div>
 
         {/* add category button and add animal button */}
-        <div className="grid grid-cols-2 gap-3 md:flex md:space-x-4 items-center justify-center">
+        <div className="grid grid-cols-2 gap-5 md:flex md:space-x-4 items-center justify-center">
           <DialogAddCat />
           <DialogAnimalAdd categoris={categories} />
         </div>
