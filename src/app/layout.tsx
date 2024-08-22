@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} bg-black`}>
+      <body className={`${spaceGrotesk.className} bg-black overflow-x-hidden`}>
         <main>{children}</main>
       </body>
     </html>
